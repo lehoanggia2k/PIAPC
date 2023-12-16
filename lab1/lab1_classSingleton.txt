@@ -1,0 +1,37 @@
+С использованием одного из языков программирования из множества (C++, C#)
+реализовать паттерн порождающего проектирования Одиночка (singleton). 
+
+
+class Singleton {
+public:
+    static Singleton& getInstance() {
+        static Singleton instance;
+        return instance;
+    }
+
+    void someMethod() {
+        // Đoạn mã của phương thức
+    }
+
+private:
+    Singleton() {} // Constructor private để ngăn không cho tạo thể hiện từ bên ngoài
+    Singleton(const Singleton&) = delete; // Xóa constructor copy
+    Singleton& operator=(const Singleton&) = delete; // Xóa operator gán
+};
+
+
+
+
+getInstance():
+
+Phương thức tĩnh getInstance trả về tham chiếu đến đối tượng Singleton. Nó sử dụng một biến static instance lưu trữ thể hiện duy nhất của Singleton.
+Biến static được khai báo trong hàm này sẽ được khởi tạo duy nhất một lần khi hàm được gọi lần đầu tiên. Khi hàm kết thúc, biến instance vẫn tồn tại và giữ giá trị của nó.
+Vì instance là biến static cục bộ trong hàm getInstance(), nó chỉ được khởi tạo một lần và tồn tại cho đến khi chương trình kết thúc. Khi getInstance() được gọi lần nữa, nó chỉ trả về tham chiếu đến instance đã tồn tại mà không tạo một thể hiện mới.
+
+someMethod():
+Đây là một phương thức của lớp Singleton, có thể được gọi thông qua getInstance() để thực hiện các thao tác trên đối tượng duy nhất của Singleton.
+Constructor và các phương thức private:
+
+Constructor của lớp Singleton được khai báo là private. Điều này ngăn chặn việc tạo thể hiện mới của Singleton từ bên ngoài lớp. Bất kỳ ai cố gắng tạo một đối tượng Singleton sẽ gặp lỗi biên dịch vì constructor là private.
+Hai phương thức Singleton(const Singleton&) (constructor copy) và operator= (operator gán) được xóa bỏ (delete). Điều này ngăn chặn việc sao chép hoặc gán giá trị của đối tượng Singleton, bảo đảm rằng chỉ có một thể hiện duy nhất và không thể tạo ra các bản sao của nó.
+Mẫu Singleton đảm bảo rằng chỉ có một thể hiện của lớp được tạo ra và có thể truy cập từ bất kỳ đâu trong chương trình thông qua getInstance().
