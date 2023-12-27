@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HoangGia\\Desktop\\attt\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj": {}
+    "C:\\Users\\HoangGia\\Desktop\\PIAPC\\lab4\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HoangGia\\Desktop\\attt\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj": {
+    "C:\\Users\\HoangGia\\Desktop\\PIAPC\\lab4\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HoangGia\\Desktop\\attt\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
+        "projectUniqueName": "C:\\Users\\HoangGia\\Desktop\\PIAPC\\lab4\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
         "projectName": "WinFormsApp1",
-        "projectPath": "C:\\Users\\HoangGia\\Desktop\\attt\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
+        "projectPath": "C:\\Users\\HoangGia\\Desktop\\PIAPC\\lab4\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
         "packagesPath": "C:\\Users\\HoangGia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HoangGia\\Desktop\\attt\\WinFormsApp1\\WinFormsApp1\\obj\\",
+        "outputPath": "C:\\Users\\HoangGia\\Desktop\\PIAPC\\lab4\\WinFormsApp1\\WinFormsApp1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HoangGia\\AppData\\Roaming\\NuGet\\NuGet.Config",
